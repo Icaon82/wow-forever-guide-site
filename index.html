@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WoW Forever Leveling Guide — 검증된 정보와 명확한 출처를 바탕으로 개발 중인 개인용 비상업 한국어 레벨업 가이드 프로젝트입니다.">
+  <meta name="theme-color" content="#102323">
+  <meta name="referrer" content="no-referrer">
+  <title>WoW Forever Leveling Guide · 프로젝트 소개</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b191b;--panel:#122628;--ink:#f2f0e7;--muted:#adc1bd;--gold:#e6c681;--mint:#8bd0bb;--line:#2c4545}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif}
+    a{color:var(--mint);text-underline-offset:5px}a:hover{color:var(--gold)}a:focus-visible{outline:3px solid var(--gold);outline-offset:7px}
+    .wrap{max-width:1140px;margin:auto;padding:0 32px}.skip{position:absolute;top:-80px;left:16px;background:var(--gold);color:var(--bg);padding:12px;z-index:5}.skip:focus{top:10px}
+    header{border-bottom:1px solid var(--line)}nav{min-height:88px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{color:var(--ink);text-decoration:none;font-weight:750;letter-spacing:.03em}.brand span{color:var(--gold);margin-right:10px}.nav-links{display:flex;gap:26px;font-size:14px}.nav-links a{color:var(--muted);text-decoration:none}
+    .hero{padding:80px 0 72px;display:grid;grid-template-columns:1.45fr 1fr;gap:64px;align-items:center}.eyebrow{color:var(--mint);font-size:12px;letter-spacing:.18em;font-weight:700;text-transform:uppercase}.tag{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);padding:6px 12px;font-size:12px;color:var(--mint);border-radius:99px}.dot{width:7px;height:7px;background:var(--mint);border-radius:100%}
+    h1{font-size:clamp(36px,5vw,62px);line-height:1.22;letter-spacing:-.055em;margin:20px 0 24px;font-weight:750}h1 em{font-style:normal;color:var(--gold)}.intro{font-size:17px;color:var(--muted);max-width:610px}.hero-actions{display:flex;align-items:center;gap:24px;margin-top:30px;flex-wrap:wrap}.button{display:inline-block;padding:11px 20px;background:var(--gold);color:#102323;text-decoration:none;font-size:14px;font-weight:750;border-radius:4px}.button:hover{background:#f0d49d;color:#102323}.quiet-link{font-size:14px}
+    .route-board{background:linear-gradient(145deg,#193639,#102224);border:1px solid #385453;padding:28px;border-radius:8px;box-shadow:0 24px 60px #0003}.board-head{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px}.board-head strong{font-size:14px}.board-head span{font-size:12px;color:var(--muted)}.step{position:relative;padding:19px 0 17px 34px;border-left:1px solid #45635f;margin-left:8px}.step:last-child{border-left-color:transparent;padding-bottom:0}.step:before{content:"";position:absolute;left:-5px;top:25px;width:9px;height:9px;border-radius:100%;background:var(--gold);box-shadow:0 0 0 5px #173033}.step small{display:block;color:var(--mint);font-size:11px;letter-spacing:.12em}.step strong{display:block;font-size:16px;margin-top:3px}.step p{margin:5px 0 0;font-size:13px;color:var(--muted)}
+    .section{padding:56px 0;border-top:1px solid var(--line)}.section-top{display:flex;justify-content:space-between;align-items:start;gap:28px;margin-bottom:32px}h2{font-size:29px;line-height:1.4;letter-spacing:-.03em;margin:8px 0 0}.section-top p{max-width:450px;color:var(--muted);margin:8px 0 0;font-size:14px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.feature-num{color:var(--gold);font-size:12px;letter-spacing:.15em}.feature h3{font-size:18px;margin:12px 0}.feature p{color:var(--muted);font-size:14px;margin:0}.status-list{margin:0;padding:0;list-style:none}.status-list li{display:grid;grid-template-columns:135px 1fr;gap:28px;border-top:1px solid var(--line);padding:20px 0}.status-list li:last-child{border-bottom:1px solid var(--line)}.status-label{font-size:13px;color:var(--mint)}.pending{color:var(--gold)}.status-content strong{font-size:16px}.status-content p{color:var(--muted);font-size:14px;margin:5px 0 0}.date{font-size:12px;color:var(--muted);white-space:nowrap}
+    .principles{display:grid;grid-template-columns:1fr 1fr;gap:48px}.principles p{color:var(--muted);font-size:14px}.source-links{list-style:none;padding:0;margin:0}.source-links li{padding:12px 0;border-bottom:1px solid var(--line)}.source-links small{display:block;color:var(--muted);font-size:12px}.english{background:#112426;padding:30px;border-left:3px solid var(--gold)}.english h2{font-size:23px;margin-top:0}.english p{font-size:14px;color:var(--muted);margin-bottom:0}.english p+p{margin-top:16px}
+    footer{padding:42px 0 38px;border-top:1px solid var(--line);background:#091517}.footer-row{display:flex;justify-content:space-between;gap:32px;align-items:start}.attribution{font-size:20px;font-weight:750;color:var(--gold);text-decoration:underline}.footnote{color:var(--muted);font-size:12px;max-width:570px;margin:12px 0 0}.footer-mark{color:var(--muted);font-size:12px;text-align:right}
+    @media(max-width:760px){.wrap{padding:0 22px}nav{min-height:80px;flex-wrap:wrap;padding:18px 0;gap:10px}.brand{font-size:14px}.nav-links{gap:18px;font-size:12px}.hero{grid-template-columns:1fr;padding:46px 0;gap:36px}h1{font-size:40px}.features{grid-template-columns:1fr;gap:30px}.section{padding:40px 0}.section-top{display:block}.section-top p{margin-top:16px}.principles{grid-template-columns:1fr;gap:24px}.status-list li{grid-template-columns:1fr;gap:5px}.footer-row{display:block}.footer-mark{text-align:left;margin-top:24px}.english{padding:23px}.intro{font-size:16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header><nav class="wrap" aria-label="주 메뉴">
+    <a class="brand" href="#main"><span aria-hidden="true">✦</span>WoW Forever Leveling Guide</a>
+    <div class="nav-links"><a href="#features">프로젝트</a><a href="#status">진행 상태</a><a href="#sources">출처</a></div>
+  </nav></header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <div class="tag"><span class="dot" aria-hidden="true"></span>개인용 · 비상업 · 개발 중</div>
+        <h1 id="title">다음 레벨로 가는 길,<br><em>근거부터 확인합니다.</em></h1>
+        <p class="intro">WoW Forever의 검증된 정보를 바탕으로 한국어 레벨업 경로를 안내하기 위해 개발 중인 프로젝트입니다. 목표는 분명하게, 확인되지 않은 정보는 확인되지 않은 상태로 보여줍니다.</p>
+        <div class="hero-actions"><a class="button" href="#status">현재 개발 상태 보기</a><a class="quiet-link" href="#overview-en" lang="en">English overview ↗</a></div>
+      </div>
+      <aside class="route-board" aria-label="예정된 이용 흐름">
+        <div class="board-head"><strong>가이드의 예정된 이용 흐름</strong><span>기본 UI 구현</span></div>
+        <div class="step"><small>01 · INPUT</small><strong>나의 조건 입력</strong><p>진영 · 종족 · 직업 · 현재 레벨 · 목표 레벨</p></div>
+        <div class="step"><small>02 · VERIFY</small><strong>출처와 검증 상태 확인</strong><p>Forever 관측, 클라이언트 정보, 참고 자료 구분</p></div>
+        <div class="step"><small>03 · PLAN</small><strong>확인된 범위의 동선 안내</strong><p>상세 데이터 확보와 검증 후 제공 예정</p></div>
+      </aside>
+    </section>
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="section-top"><div><div class="eyebrow">THE PROJECT</div><h2 id="features-title">정확한 정보가 먼저인 가이드</h2></div><p>전체 최적 경로를 보장하는 서비스가 아닙니다. 검증 가능한 데이터가 있는 범위에서만 추천하는 것을 원칙으로 합니다.</p></div>
+      <div class="features">
+        <article class="feature"><div class="feature-num">01 / LEVELING</div><h3>조건에 맞는 레벨업 안내</h3><p>입력한 레벨과 캐릭터 조건을 바탕으로 지역과 퀘스트를 검토할 수 있는 한국어 화면을 준비합니다.</p></article>
+        <article class="feature"><div class="feature-num">02 / EVIDENCE</div><h3>출처를 따라갈 수 있는 정보</h3><p>자료의 출처, 확인 시점, 빌드와 검증 상태를 구분합니다. Classic 참고 정보를 Forever 확정 정보로 바꾸지 않습니다.</p></article>
+        <article class="feature"><div class="feature-num">03 / SCOPE</div><h3>필요한 범위의 진행 계획</h3><p>퀘스트 순서·NPC·이동 동선·직업별 육성 정보는 근거 확보 후 연결할 예정입니다. 미확인 좌표와 선행 조건은 생성하지 않습니다.</p></article>
+      </div>
+    </section>
+    <section class="section" id="status" aria-labelledby="status-title">
+      <div class="section-top"><div><div class="eyebrow">DEVELOPMENT STATUS</div><h2 id="status-title">현재 가능한 것과 남은 일</h2></div><div class="date">확인일 · 2026년 11월 10일</div></div>
+      <ul class="status-list">
+        <li><div class="status-label">구현 · 테스트 완료</div><div class="status-content"><strong>기본 입력 UI와 추천 엔진의 초기 구조</strong><p>한국어 입력 화면, 출처 표시, 미검증 정보 제외 로직을 구현했습니다. 현재 개발 버전의 자동화 테스트 59개가 통과했습니다.</p></div></li>
+        <li><div class="status-label">소량 참고 자료 연결</div><div class="status-content"><strong>공개 직업 명칭과 지역 참고 정보</strong><p>소량의 공개 사실 요약과 링크를 연결했습니다. 지역 목록의 레벨 범위를 검증된 추천 경로로 간주하지 않으며 불일치도 표시합니다.</p></div></li>
+        <li><div class="status-label pending">접근 신청 준비 중</div><div class="status-content"><strong>ForeverDB API 접근 승인 대기</strong><p>신청 문안을 준비 중이며 신청을 제출하지 않았습니다. 실제 데이터 API 호출과 API 키 발급도 수행하지 않았습니다.</p></div></li>
+        <li><div class="status-label pending">아직 제공하지 않음</div><div class="status-content"><strong>검증된 상세 퀘스트 동선</strong><p>실행 가능한 검증 퀘스트 경로는 아직 없습니다. NPC·좌표·선행 조건을 실제 응답과 근거로 확인한 뒤 단계적으로 추가할 예정입니다.</p></div></li>
+      </ul>
+    </section>
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="section-top"><div><div class="eyebrow">SOURCES &amp; PRINCIPLES</div><h2 id="sources-title">출처를 섞지 않고, 한계를 숨기지 않습니다.</h2></div></div>
+      <div class="principles">
+        <div><h3>개인용 도구의 공개 소개 페이지</h3><p>이 페이지는 프로젝트 목적과 진행 상태를 설명합니다. 가이드 앱 자체와 상세 데이터셋을 배포하는 페이지가 아닙니다. 개인 캐릭터 등록, 완료 퀘스트 기록, 게임 진행 데이터 동기화는 프로젝트 범위에 포함하지 않습니다.</p><p>외부 데이터는 이용 조건과 허용 범위를 확인한 뒤 사용합니다. API 접근 승인과 데이터의 재배포 권한은 별도로 판단합니다.</p></div>
+        <ul class="source-links" aria-label="데이터 출처">
+          <li><a href="https://foreverdb.net/">ForeverDB.net</a><small>기본 데이터 출처 · 상세 API 데이터는 승인 이후에만 사용</small></li>
+          <li><a href="https://foreverdb.app/en/forever">ForeverDB.app</a><small>보조 검증 출처 · net과 동일 운영 주체인지 미확인</small></li>
+          <li><a href="https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever">Blizzard 공식 안내</a><small>공식 뉴스 및 개발자 안내 · 발표 범위 내에서 구분하여 참고</small></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" id="overview-en" lang="en" aria-labelledby="english-title"><div class="english">
+      <div class="eyebrow">FOR DATA PROVIDERS &amp; REVIEWERS</div><h2 id="english-title">A personal, non-commercial leveling guide.</h2>
+      <p>WoW Forever Leveling Guide is a Korean-language prototype intended to offer evidence-based leveling guidance by faction, race, class, and level range. Its basic UI and recommendation framework are implemented. API access is pending; no live data API calls have been made, and no verified quest routes are available yet.</p>
+      <p>ForeverDB.net is the primary data source. ForeverDB.app is a separate secondary validation source; a shared operator or matching data IDs are not assumed. Unverified quest prerequisites, NPC locations, and coordinates will not be invented. This public page is a project overview, not an application or API dataset release.</p>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-row"><div>
+    <a class="attribution" href="https://foreverdb.net">Data from ForeverDB.net</a>
+    <p class="footnote">기본 데이터 출처를 명확히 표시합니다. 상세 API 데이터 이용은 접근 승인 이후에만 진행합니다.</p>
+    <p class="footnote">이 프로젝트는 비공식 개인 프로젝트이며 Blizzard Entertainment 또는 ForeverDB의 공식 서비스가 아닙니다. World of Warcraft 및 관련 상표는 각 권리자에게 속합니다.</p>
+  </div><div class="footer-mark">WoW Forever Leveling Guide<br>Personal project · Non-commercial<br>Project overview · 2026</div></div></footer>
+</body>
+</html>
